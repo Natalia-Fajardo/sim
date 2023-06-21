@@ -59,18 +59,6 @@ font-size: 17px;
 nav a:hover{
     color: yellow;
 }
-@media (max-width:680px){
-    header{
-        flex-direction: column;
-    }
-    nav{
-        padding: 10px 0px;
-    }
-    .carrusel{
-        height: 400px;
-        width: 200px;
-    }
-}
 
 /* main (imagen)*/
 
@@ -119,6 +107,7 @@ padding: 20px;
 .pservicios img{
     width: 600px;
     height: 400px;
+    border-radius: 25% 10%;
 }
 
 /* footer*/
@@ -172,6 +161,52 @@ footer div h2{
     
 }
 
+/*responsive*/
+
+@media(max-width:480px){
+
+    header{
+        flex-direction: column;
+    }
+    .listaorisontal{
+        flex-direction: column;
+    }
+    .listaorisontal li{
+        padding: 1rem;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+    .carrusel{
+        height: 300px;
+        width: 420px;
+    }
+    .parrafo{
+        flex-direction: column;
+    }
+
+    .pservicios img{
+        width: 350px;
+        height: 200px;
+        border-radius: 25% 10%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    #comentario{
+        width: 300px;
+        height: 100px;
+    }
+    #enviar{
+        width:300px;
+    }
+    footer iframe{
+        width: 300px;
+    }
+
+}
 /*servicios pagina 2*/
 h1{
     text-align: center;
@@ -226,6 +261,12 @@ h1{
     width: 600px;
     height: 400px;
 }
+@media(max-width:480px){
+    .exito img{
+        width: 400px;
+        height: 300px;
+    }
+}
 /*contacto*/
 .contacto{
     display: flex;
@@ -252,6 +293,30 @@ h1{
     width: 774px;
     height: 60px;
 }
+@media(max-width:480px){
+    
+
+    .contacto #Nombre{
+        width: 400px;
+        height: 45.5px;
+    }
+    .contacto #email{
+        width: 400px;
+        height: 45.5px;
+    }
+    .contacto #telefono{
+        width: 400px;
+        height: 45.5px;
+    }
+    .contacto #asunto{
+        width: 400px;
+        height: 45.5px;
+    }
+    .contacto #enviar{
+        width: 400px;
+        height: 60px;
+    }
+}
 /*fabricacion*/
 .fabricacion{
 background-color: cadetblue;
@@ -275,6 +340,15 @@ article p{
     font-size: 25px;
 }
 
+@media(max-width:480px){
+    .imgs{
+        flex-direction: column;
+    }
+    article p{
+        font-size: 25px;
+        display: flex;
+    }
+}
 
 
 
