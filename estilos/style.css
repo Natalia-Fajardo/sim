@@ -59,6 +59,19 @@ font-size: 17px;
 nav a:hover{
     color: yellow;
 }
+.mostrar-menu {
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    display: none;
+    transition: 0.4s;
+}
+.mostrar-menu{
+    order: 1;
+}
+#check{
+ display: none;
+}
 
 /* main (imagen)*/
 
@@ -158,25 +171,42 @@ footer div h2{
 .footercontac a{
     display: flex;
     flex-direction: row;
+    padding-top: 20px;
     
 }
 
 /*responsive*/
 
-@media(max-width:480px){
+@media(max-width:420px){
 
     header{
         flex-direction: column;
     }
-    .listaorisontal{
-        flex-direction: column;
-    }
-    .listaorisontal li{
-        padding: 1rem;
+
+    .mostrar-menu ,
+    .esconder-menu{
+        color: white;
+        display: block;
+        position: relative;
     }
 
-    nav{
-        padding: 10px 0px;
+    .listaorisontal{
+        position:fixed;
+        top: 80px;
+        bottom: 0;
+        background-color: black;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+
+    #check:checked + .listaorisontal{
+        clip-path: circle(100% at center);
     }
     .carrusel{
         height: 300px;
