@@ -1,0 +1,59 @@
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+ #Nombre{
+    width: 770px;
+    height: 45.5px;
+}
+ #email{
+    width: 770px;
+    height: 45.5px;
+}
+ #telefono{
+    width: 770px;
+    height: 45.5px;
+}
+ #asunto{
+    width: 770px;
+    height: 45.5px;
+}
+ #enviar{
+    width: 774px;
+    height: 60px;
+}
+}
+@media(max-width:480px){
+    
+
+    .contacto{
+        input{
+            display: grid;
+            grid-template-rows: 90% 90% 90% 90% 90%; 
+            grid-template-columns: auto auto auto;
+        }
+    #Nombre{
+        grid-column: 1/3;
+        width: 200px;
+        height: 40px;
+    }
+     #email{
+        width: 200px;
+        height: 40px;
+    }
+    #telefono{
+        width: 200px;
+        height: 40px;
+    }
+    #asunto{
+        width: 200px;
+        height: 40px;
+    }
+    #enviar{
+        width: 200px;
+        height: 40px;
+    }
+
+}
+}

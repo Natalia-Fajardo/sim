@@ -1,0 +1,192 @@
+header{
+min-height: 70px;
+background-color:black;
+display: flex;
+justify-content: space-around;
+align-items: center;
+font-size: 15px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding-right: 0px;
+
+    img{
+        display: flex;
+        height: 90px;
+    }
+}
+nav a{
+font-weight: 800;
+padding-right:30px;
+font-size: 17px;
+}
+.listaorisontal{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.listavertical{
+
+     li a{
+        display: block;
+        list-style: none;
+        padding: 20px;
+        padding-left: 0px
+     }
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: black;
+}
+.listaorisontal li:hover .listavertical{
+    display: block;
+}
+nav a:hover{
+    color: yellow;
+}
+.mostrar-menu {
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    display: none;
+    transition: 0.4s;
+    &{
+        order: 1;
+    }
+}
+#check{
+ display: none;
+}
+
+footer{
+    display:flex;
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+
+  h2{
+    color: white;
+    }
+
+    div{ 
+        
+        iframe{
+        height: 200px;
+        }
+        padding: 20px;
+
+        h2{
+            border-bottom: 2px solid yellow;
+        }
+    }
+
+    #Nombre{
+        height: 30px;
+    }
+    #email{
+        height: 30px;
+    }
+    #enviar{
+        width: 350px;
+        height: 40px;
+        background-color: white;
+
+        &:hover{
+            background-color: yellow;
+        }
+    
+    }
+
+}
+
+.footercontac{
+    a{
+        i{
+            
+            height: 10px;
+            width: 10px;
+            display: flex;
+            flex-direction: row;
+            margin: 5px;
+            padding-right: 20px;
+        }
+
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+    }
+}
+
+@media(max-width:480px){
+
+    header{
+        flex-direction: column;
+    }
+
+    .mostrar-menu ,
+    .esconder-menu{
+        color: white;
+        display: block;
+        position: relative;
+    }
+
+    .listaorisontal{
+        position:fixed;
+        top: 80px;
+        bottom: 0;
+        background-color: black;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+
+    #check:checked + .listaorisontal{
+        clip-path: circle(100% at center);
+    }
+    .carrusel{
+        height: 300px;
+        width: 420px;
+    }
+    .parrafo{
+        flex-direction: column;
+    }
+
+    .pservicios img{
+        width: 350px;
+        height: 200px;
+        border-radius: 25% 10%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+
+        iframe{
+            width: 300px;
+        }
+    }
+    #Nombre{
+        width: 20rem;
+
+    }
+    #email{
+        width: 20rem;
+
+    }
+    #comentario{
+        width: 300px;
+        height: 100px;
+    }
+    #enviar{
+        width:1rem;
+    }
+
+
+}
