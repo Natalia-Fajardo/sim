@@ -167,8 +167,7 @@ footer #enviar:hover {
     clip-path: circle(100% at center);
   }
   .carrusel img {
-    width: 100%;
-    height: 200px;
+    display: none;
   }
   .parrafo {
     flex-direction: column;
