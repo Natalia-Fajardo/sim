@@ -139,7 +139,7 @@ footer{
         top: 80px;
         bottom: 0;
         background-color: black;
-        width: 100%;
+        width: 90%;
         left: 0;
         display: flex;
         justify-content: space-evenly;
@@ -154,7 +154,9 @@ footer{
     }
     .carrusel{
         img{
-            display: none;
+            display: flex ;
+            left: 0;
+
         }
     }
     .parrafo{
