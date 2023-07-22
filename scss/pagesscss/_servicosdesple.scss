@@ -1,12 +1,14 @@
 .fabricacion{
     background-color: cadetblue;
     padding: 50px;
-    
+
     h1{
         display: flex;
         font-size: 50px;
         color: white;
         border-bottom: 4px solid blue;
+        text-align: center;
+
     }
 }
     .imgs{
@@ -23,21 +25,5 @@
         font-size: 25px;
     }
     
-    @media(max-width:480px){
-        h1{
-            flex-direction: column;
-        }
-        .imgs{
-            flex-direction: column;
-            img{
-                width: 300px;
-                height: 200px;
-            }
-
-        }
-        article p{
-            font-size: 25px;
-            display: flex;
-        }
-    }
+   
     

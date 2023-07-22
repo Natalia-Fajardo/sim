@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   width: 100%;
   height: 100%;
@@ -7,6 +8,11 @@ body {
   font-weight: sans-serif;
   margin: 0;
   background-image: url(../imagenes/layered-steps-haikei.svg);
+}
+@media (max-width: 480px) {
+  body {
+    background-image: none;
+  }
 }
 
 a {
@@ -160,9 +166,9 @@ footer #enviar:hover {
   #check:checked + .listaorisontal {
     clip-path: circle(100% at center);
   }
-  .carrusel {
-    height: 300px;
-    width: 420px;
+  .carrusel img {
+    width: 100%;
+    height: 200px;
   }
   .parrafo {
     flex-direction: column;
@@ -236,16 +242,6 @@ footer #enviar:hover {
   border-radius: 25% 10%;
 }
 
-@media (max-width: 480px) {
-  .carrusel img {
-    width: 480px;
-    justify-content: right;
-  }
-  .pservicios img {
-    width: 300px;
-    height: 200px;
-  }
-}
 .prodes {
   background-color: blue;
   width: 100px;
@@ -281,12 +277,6 @@ footer #enviar:hover {
   height: 400px;
 }
 
-@media (max-width: 480px) {
-  .exito img {
-    width: 400px;
-    height: 300px;
-  }
-}
 .contacto {
   display: flex;
   flex-direction: column;
@@ -313,34 +303,6 @@ footer #enviar:hover {
   height: 60px;
 }
 
-@media (max-width: 480px) {
-  .contacto input {
-    display: grid;
-    grid-template-rows: 90% 90% 90% 90% 90%;
-    grid-template-columns: auto auto auto;
-  }
-  .contacto #Nombre {
-    grid-column: 1/3;
-    width: 200px;
-    height: 40px;
-  }
-  .contacto #email {
-    width: 200px;
-    height: 40px;
-  }
-  .contacto #telefono {
-    width: 200px;
-    height: 40px;
-  }
-  .contacto #asunto {
-    width: 200px;
-    height: 40px;
-  }
-  .contacto #enviar {
-    width: 200px;
-    height: 40px;
-  }
-}
 .fabricacion {
   background-color: cadetblue;
   padding: 50px;
@@ -350,6 +312,7 @@ footer #enviar:hover {
   font-size: 50px;
   color: white;
   border-bottom: 4px solid blue;
+  text-align: center;
 }
 
 .imgs {
@@ -367,6 +330,56 @@ article p {
   font-size: 25px;
 }
 
+/*casos de exito*/
+@media (max-width: 480px) {
+  .exito img {
+    width: 400px;
+    height: 300px;
+  }
+}
+/*contacto*/
+@media (max-width: 480px) {
+  .contacto {
+    display: flex; /* Alinear los elementos en forma de columna */
+    flex-direction: column; /* Alinear los elementos de arriba a abajo */
+    align-items: center; /* Centrar los elementos dentro de sus contenedores */
+    width: 100%; /* Ajustar el ancho al 80% de la pantalla */
+    margin: 0 auto; /* Centrar el formulario en la página */
+  }
+  #Nombre {
+    width: 100%; /* El formulario se adapta al ancho de la pantalla */
+    height: 45.5px;
+  }
+  #email {
+    width: 100%;
+    height: 45.5px;
+  }
+  #telefono {
+    width: 100%;
+    height: 45.5px;
+  }
+  #asunto {
+    width: 100%;
+    height: 45.5px;
+  }
+  #enviar {
+    width: 100%;
+    height: 60px;
+  }
+}
+/* !important se usa para que las propiedades no sean sobreescritas */
+/*index*/
+@media (max-width: 480px) {
+  .carrusel img {
+    width: 480px;
+    align-content: baseline;
+  }
+  .pservicios img {
+    width: 300px;
+    height: 200px;
+  }
+}
+/*servicios*/
 @media (max-width: 480px) {
   h1 {
     flex-direction: column;

@@ -1,0 +1,71 @@
+/*casos de exito*/
+@media(max-width:480px){
+
+    .exito img{
+        width: 400px;
+        height: 300px;
+    }
+}
+/*contacto*/
+@media(max-width:480px){
+.contacto {
+    display: flex; /* Alinear los elementos en forma de columna */
+    flex-direction: column; /* Alinear los elementos de arriba a abajo */
+    align-items: center; /* Centrar los elementos dentro de sus contenedores */
+    width:100%; /* Ajustar el ancho al 80% de la pantalla */
+    margin:0 auto; /* Centrar el formulario en la página */
+   }
+  #Nombre {
+   width:100%; /* El formulario se adapta al ancho de la pantalla */
+   height:45.5px
+   }
+  #email {
+   width:100%;
+   height:45.5px
+   }
+  #telefono {
+   width:100%;
+   height:45.5px
+   }
+  #asunto {
+   width:100%;
+   height:45.5px
+   }
+  #enviar { 
+  width:100%; 
+  height:60px 
+  }}
+  /* !important se usa para que las propiedades no sean sobreescritas */
+/*index*/
+@media (max-width:480px){
+    .carrusel{
+        img{
+            width: 480px;
+            align-content: baseline;
+        }
+    }
+    .pservicios{
+        img{
+        width: 300px;
+        height: 200px;
+        }
+    }
+}
+/*servicios*/
+@media(max-width:480px){
+    h1{
+        flex-direction: column;
+    }
+    .imgs{
+        flex-direction: column;
+        img{
+            width: 300px;
+            height: 200px;
+        }
+
+    }
+    article p{
+        font-size: 25px;
+        display: flex;
+    }
+}
