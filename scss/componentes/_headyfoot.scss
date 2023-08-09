@@ -136,11 +136,12 @@ footer{
 
     .listaorisontal{
         position:fixed;
-        top: 80px;
+        top: 70px;
         bottom: 0;
         background-color: black;
         width: 90%;
         left: 0;
+        margin: 0 auto;
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
@@ -190,7 +191,7 @@ footer{
             height: 100px;
         }
         #enviar{
-            width:1rem;
+            width:20rem;
         }
     }
    
