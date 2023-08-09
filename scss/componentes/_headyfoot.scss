@@ -154,7 +154,10 @@ footer{
     }
     .carrusel{
         img{
-            display: none;
+            width: 80%;
+            margin: 0;
+            display:flex;
+            flex-direction: column;
 
         }
     }
@@ -174,22 +177,23 @@ footer{
         iframe{
             width: 300px;
         }
+        #Nombre{
+            width: 20rem;
+    
+        }
+        #email{
+            width: 20rem;
+    
+        }
+        #comentario{
+            width: 300px;
+            height: 100px;
+        }
+        #enviar{
+            width:1rem;
+        }
     }
-    #Nombre{
-        width: 20rem;
-
-    }
-    #email{
-        width: 20rem;
-
-    }
-    #comentario{
-        width: 300px;
-        height: 100px;
-    }
-    #enviar{
-        width:1rem;
-    }
+   
 
 
 }
